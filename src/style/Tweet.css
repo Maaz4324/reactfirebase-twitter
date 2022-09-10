@@ -1,0 +1,243 @@
+.tweet_container {
+  /* min-height: 100vh; */
+  border-right: 1px solid #424242;
+  border-left: 1px solid #424242;
+  width: 40%;
+  overflow-y: scroll;
+  height: 100%;
+  min-width: 598px;
+}
+.tweet_container::-webkit-scrollbar {
+  display: none;
+}
+.tweet_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 0;
+}
+.tweet_top svg {
+  width: 24px;
+  cursor: pointer;
+
+  fill: white;
+}
+
+.tweet_user {
+  width: 50px;
+}
+.tweet_user img {
+  width: 100%;
+  border-radius: 50%;
+}
+.tweet_happen {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+  border-bottom: 1px solid #424242;
+}
+.task {
+  width: 100%;
+}
+.input_tweet input {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+  border: 0;
+  background-color: black;
+  color: white;
+}
+.task_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 10px;
+  /* border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8; */
+}
+.btn_tweet button {
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 20px;
+  font-weight: bolder;
+  font-size: 18px;
+  background-color: #3daef9;
+  color: white;
+  border: 0;
+}
+
+.task_logo svg {
+  width: 24px;
+  cursor: pointer;
+
+  fill: white;
+}
+.task_logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.tweet_bottom {
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+}
+.tweet_feed_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-bottom: 1px solid #424242;
+  padding: 10px;
+}
+.tweet_feed_container:hover {
+  transition: all 0.3s;
+  background-color: #070707;
+}
+.feed_user_logo {
+  width: 60px;
+}
+.feed_user_name_container p {
+  color: gray;
+  margin-left: 10px;
+}
+.feed_user_logo img {
+  width: 100%;
+  border-radius: 50%;
+}
+.feed_contents {
+  width: 100%;
+  margin-left: 10px;
+}
+.feed_img {
+  width: 100%;
+  margin: 7px 0;
+}
+.feed_img img {
+  width: 100%;
+  /* border: 1px solid rgb(131, 131, 131); */
+  border-radius: 10px;
+}
+
+.feed_user_name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.feed_user_name h5 {
+  font-size: 18px;
+}
+.feed_user_name p {
+  font-size: 16px;
+}
+.feed_txt p {
+  font-size: 14px;
+  margin: 7px 0;
+  color: #c7c7c7;
+}
+
+.feed_activity_logo {
+  width: 20px;
+}
+.like {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feed_activity_logo p {
+  font-size: 14px;
+  margin-left: 4px;
+}
+.feed_activity_logos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 20px;
+}
+.feed_activity_logo svg {
+  width: 100%;
+  cursor: pointer;
+  fill: white;
+}
+.logo_tweet_top {
+  display: none;
+}
+.user_tweet_top {
+  display: none;
+}
+.feed_delete svg {
+  fill: white;
+  width: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 1290px) {
+  .tweet_container {
+    width: 60%;
+  }
+}
+@media (max-width: 1091px) {
+  .tweet_container {
+    width: 60%;
+  }
+}
+@media (max-width: 1026px) {
+  .tweet_container {
+    width: 100%;
+    min-width: 0;
+    max-width: 600px;
+  }
+}
+@media (max-width: 500px) {
+  .tweet_container {
+    padding-bottom: 20%;
+  }
+  .logo_tweet_top {
+    display: block;
+  }
+  .logo_tweet_top svg {
+    width: 24px;
+    fill: white;
+  }
+  .tweet_top h2 {
+    display: none;
+  }
+  .tweet_top {
+    /* position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(123, 123, 123, 0.216);
+    backdrop-filter: blur(5px); */
+    border-bottom: 1px solid #424242;
+  }
+  .user_tweet_top {
+    display: block;
+  }
+  .tweet_happen {
+    display: none;
+  }
+  .user_tweet_top img {
+    width: 24px;
+  }
+  .tweet_container {
+    /* min-height: 100vh; */
+    border: 0;
+  }
+  .feed_txt p {
+    font-size: 12px;
+  }
+  .tweet_top {
+    padding: 0 10px;
+    /* position: fixed; */
+    /* top: 0; */
+    width: 100%;
+    background-color: black;
+  }
+}
